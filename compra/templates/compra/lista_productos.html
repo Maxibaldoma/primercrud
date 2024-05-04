@@ -1,0 +1,32 @@
+{% extends 'base/base.html' %}
+
+{% block title %}Lista de Proveedores{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Lista de Productos</h1>
+        <a href="{% url 'compra:agregar_producto' %}" class="btn btn-link">Agregar nuevo Producto</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Stock Actual</th>
+                    <th>Proveedor</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for producto in productos %}
+                <tr>
+                    <td>{{ producto.id }}</td>
+                    <td>{{ producto.nombre }}</td>
+                    <td>{{ producto.precio }}</td>
+                    <td>{{ producto.stock_actual }}</td>
+                    <td>{{ producto.proveedor }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

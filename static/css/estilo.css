@@ -1,0 +1,41 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    flex: 1;
+    padding-bottom: 10px; /* Ajusta el espacio entre el contenido y el pie de página */
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #DEB887;
+    border-bottom: 1px solid #ccc;
+}
+
+header img {
+    float: left; /* Hace que la imagen esté a la izquierda del encabezado */
+    margin-right: 10px; /* Añade un pequeño margen entre la imagen y el texto */
+}
+
+.custom-heading {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #FFEBCD;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
