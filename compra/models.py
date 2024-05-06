@@ -5,6 +5,9 @@ class Proveedor(models.Model):
     apellido = models.CharField(max_length=100)
     dni = models.CharField(max_length=10)
 
+    class Meta:
+        verbose_name_plural = "proveedores"
+
     def __str__(self):
         return f"{self.nombre} {self.apellido}"
 

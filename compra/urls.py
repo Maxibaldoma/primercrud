@@ -3,7 +3,6 @@ from . import views
 
 app_name = 'compra'
 
-
 urlpatterns = [
     path('productos/', views.lista_productos, name='lista_productos'),  # URL para listar productos
     path('agregar-producto/', views.agregar_producto, name='agregar_producto'),  # URL para agregar producto
