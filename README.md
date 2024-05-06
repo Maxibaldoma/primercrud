@@ -10,7 +10,7 @@ Stockcontrol es una aplicación de gestión de compras diseñada para administra
 - Interfaz fácil de usar e intuitiva.
 
 ## Instalación
-1. Clona este repositorio: `git clone https://github.com/Maxibaldoma/stockcontrol.git`
+1. Clona este repositorio: `https://github.com/Maxibaldoma/primercrud`
 2. Instala las dependencias: `pip install -r requirements.txt`
 3. Configura la base de datos según la documentación.
 4. Ejecuta las migraciones: `python manage.py migrate`
